@@ -1,0 +1,25 @@
+.collapsible {
+  cursor: pointer;
+  padding: 1rem;
+  background-color: var(--clr-background);
+  border: none;
+  outline: none;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 1rem;
+  width: 12vw;
+  max-height: 0;
+  overflow: hidden;
+  background-color: var(--clr-background);
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible img {
+  width: 12vw;
+}

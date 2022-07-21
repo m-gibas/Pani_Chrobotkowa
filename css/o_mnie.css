@@ -1,0 +1,38 @@
+/* .main_content img {
+  max-height: 25vw;
+} */
+
+.myself {
+  max-height: 25vw;
+  max-width: auto;
+  /* float: left; */
+  padding: 0 3rem;
+}
+
+.frame {
+  margin: 5vh 10vw;
+  padding: 8rem;
+  border: var(--border-width) solid rgba(145, 120, 120, 0.65);
+  border-radius: 1rem;
+  height: 70%;
+}
+
+.main_content {
+  background: rgba(9, 95, 13, 0.125);
+  /* background-image: url("../images/chrobotek.jpg");
+      opacity: 0.6; */
+
+  border-radius: 2rem;
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+  display: flex;
+}
+
+.main_content span {
+  font-size: 1.85rem;
+  font-weight: 400;
+}
+
+.bottom {
+  padding: 1vw;
+}

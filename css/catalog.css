@@ -15,6 +15,10 @@
   color: rgb(255, 255, 255);
   width: auto;
   height: auto;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .bottom {
@@ -72,10 +76,33 @@
   width: 100%;
   text-align: center;
   margin-top: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
 
+.overlay-content img {
+  cursor: default;
+  margin: 0 6vw;
+  width: 15vw;
+}
+
+.overlay-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  color: var(--clr-background);
+}
+
+/* #overlay-text2 {
+  display: none;
+} */
+
 .overlay-content span {
-  color: black;
+  /* color: black; */
   font-size: 1.65rem;
 }
 

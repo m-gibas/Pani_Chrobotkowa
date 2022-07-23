@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pani Chrobotkowa - zamówienia</title>
     <link rel="stylesheet" href="./css/topNavBar.css" />
-    <link rel="stylesheet" href="./css/mainContent.css" />
+    <!-- <link rel="stylesheet" href="./css/mainContent.css" /> -->
     <link rel="stylesheet" href="./css/catalog.css" />
     <script src="./JavaScript/collapsible.js" defer></script>
+    <script src="./JavaScript/catalog.js" defer></script>
     <!-- icons script -->
     <script
       type="module"
@@ -67,12 +68,11 @@
         </nav>
       </div>
 
-      <div class="frame">
+      <!-- <div class="frame">
         <div class="main_content">
           <div class="catalog_images">
             <button type="button" class="collapsible">
               <img src="./images/img1.jpg" alt="First Image" />
-              <!-- Open Collapsible -->
             </button>
             <div class="content">
               <span>
@@ -84,7 +84,33 @@
             </div>
           </div>
         </div>
+      </div> -->
+
+      <div class="frame">
+        <div class="main_content">
+          <span onclick="openNav()">
+            <img src="./images/img1.jpg" alt="First Image" />
+          </span>
+
+          <div class="overlay" id="myProduct">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+              &times;
+            </a>
+
+            <div class="overlay-content">
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus eum, quia doloribus tenetur aliquam eligendi optio
+                ratione fugit omnis et assumenda corporis atque nulla. Vero
+                error magni repellendus incidunt repudiandae!
+              </span>
+              <br />
+              <span> Something different </span>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="bottom"></div>
       <footer></footer>
     </div>

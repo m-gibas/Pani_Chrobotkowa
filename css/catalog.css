@@ -1,4 +1,27 @@
-.collapsible {
+.frame {
+  margin: 5vh 10vw;
+  padding: 8rem;
+  border: var(--border-width) solid rgba(145, 120, 120, 0.65);
+  border-radius: 1rem;
+  height: 70%;
+  width: 70%;
+  position: absolute;
+}
+
+.main_content {
+  padding: 8vw;
+  background: rgba(9, 95, 13, 0.125);
+  border-radius: 2rem;
+  color: rgb(255, 255, 255);
+  width: auto;
+  height: auto;
+}
+
+.bottom {
+  /* padding: 1vw; */
+}
+
+/* .collapsible {
   cursor: pointer;
   padding: 1rem;
   background-color: var(--clr-background);
@@ -22,4 +45,61 @@
 
 .collapsible img {
   width: 12vw;
+} */
+
+.main_content img {
+  width: 12vw;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 0.7rem;
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: var(--clr-background);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.overlay-content span {
+  color: black;
+  font-size: 1.65rem;
+}
+
+/* The navigation links inside the overlay 
+    w moim przypadku na razie useless
+*/
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+  font-size: 5rem;
 }
